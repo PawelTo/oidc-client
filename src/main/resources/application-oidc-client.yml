@@ -1,0 +1,8 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          client-id: 742199856496-u7mgbvhoulnjtdjkrd2vk5t6e5h5f7to.apps.googleusercontent.com
+          client-secret: 3Dq-hvUk6Yz8CymXzEKrqEvT
+          introspection-uri: "https://accounts.google.com/o/oauth2/v2/auth"

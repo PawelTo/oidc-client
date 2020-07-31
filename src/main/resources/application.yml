@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    url: "jdbc:h2:file:D:/Workspaces/File_DB/h2_client_oidc"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  liquibase:
+    change-log: "classpath:liquibase/changeLog.xml"
+  profiles:
+    active: resource-server
