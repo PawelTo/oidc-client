@@ -27,7 +27,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/**").authenticated()
                 .anyRequest().denyAll()
                 .and()
-                .oauth2Client(OAuth2ClientConfigurer::authorizationCodeGrant)
+                .oauth2Login()
         ;
     }
 }

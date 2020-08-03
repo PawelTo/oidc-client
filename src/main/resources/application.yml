@@ -10,4 +10,4 @@ spring:
   liquibase:
     change-log: "classpath:liquibase/changeLog.xml"
   profiles:
-    active: resource-server
+    active: oidc-client
