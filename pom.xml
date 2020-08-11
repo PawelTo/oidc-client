@@ -12,6 +12,7 @@
         <org.liquibase.version>3.10.0</org.liquibase.version>
         <org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <com.nibusds.version>8.19</com.nibusds.version>
         <swagger.version>1.4.0</swagger.version>
     </properties>
 
@@ -27,6 +28,11 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!--<dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${com.nimbusds.version}</version>
+        </dependency>-->
         <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
