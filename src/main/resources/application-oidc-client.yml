@@ -4,8 +4,8 @@ spring:
       client:
         registration:
           my-oidc:
-            client-id: 742199856496-4pjvrdf43ab3sjg3s06tobig4nteqtln.apps.googleusercontent.com
-            client-secret: d1tl-mxBz61CrRH0UhYw6bm_
+            client-id: XXX.apps.googleusercontent.com
+            client-secret: XXX
             authorization-grant-type: authorization_code
             redirect-uri: "http://localhost:8083/login/oauth2/code/redirecturi"
             scope: openid, profile

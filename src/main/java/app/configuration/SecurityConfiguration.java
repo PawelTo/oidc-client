@@ -30,6 +30,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .anyRequest().denyAll()
                 .and()
                 .oauth2Login()
+                //.and()
+                //.oauth2Client(Customizer.withDefaults())
         ;
     }
 }

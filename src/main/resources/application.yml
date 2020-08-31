@@ -1,11 +1,14 @@
 logging:
   level:
     org.springframework.web.client.RestTemplate: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
 server:
   port: 8083
 spring:
   datasource:
     url: "jdbc:h2:file:D:/Workspaces/File_DB/h2_client_oidc"
+  http:
+    log-request-details: TRUE
   jpa:
     hibernate:
       ddl-auto: validate
