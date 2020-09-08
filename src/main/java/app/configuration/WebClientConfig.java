@@ -33,12 +33,12 @@ public class WebClientConfig {
     @Bean
     public WebClient webClient(){
         log.info("Creating WebClient");
-        ServletOAuth2AuthorizedClientExchangeFilterFunction oAuth2AuthorizedClientExchangeFilterFunction =
-                new ServletOAuth2AuthorizedClientExchangeFilterFunction(clientRegistrationRepository, oAuth2AuthorizedClientRepository);
-        oAuth2AuthorizedClientExchangeFilterFunction.setDefaultOAuth2AuthorizedClient(true);
+        //ServletOAuth2AuthorizedClientExchangeFilterFunction oAuth2AuthorizedClientExchangeFilterFunction =
+        //        new ServletOAuth2AuthorizedClientExchangeFilterFunction(clientRegistrationRepository, oAuth2AuthorizedClientRepository);
+        //oAuth2AuthorizedClientExchangeFilterFunction.setDefaultOAuth2AuthorizedClient(true);
         //oAuth2AuthorizedClientExchangeFilterFunction.setDefaultClientRegistrationId("my-oidc");
         return WebClient.builder()
-                        .filter(oAuth2AuthorizedClientExchangeFilterFunction)
+                        //.filter(oAuth2AuthorizedClientExchangeFilterFunction)
                         .build();
     }
 
